@@ -1,0 +1,12 @@
+include /_mixins
+
+doctype html
+html
+  head
+    title Music Store
+    +lato_font_link()
+    +stylesheet_link_tag('application')
+  body
+    main
+      block content
+    +javascript_include_tag('vendor/all')

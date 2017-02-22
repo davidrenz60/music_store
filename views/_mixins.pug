@@ -1,0 +1,8 @@
+mixin stylesheet_link_tag(src)
+  link(rel='stylesheet' href='/stylesheets/' + src + '.css')
+
+mixin lato_font_link
+  link(href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet")
+
+mixin javascript_include_tag(src)
+  script(type="text/javascript" src="/javascripts/" + src + ".js")
