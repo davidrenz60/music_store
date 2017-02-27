@@ -4,5 +4,7 @@ mixin stylesheet_link_tag(src)
 mixin lato_font_link
   link(href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet")
 
-mixin javascript_include_tag(src)
+mixin javascript_include_tag(src, ...rest)
   script(type="text/javascript" src="/javascripts/" + src + ".js")
+  each file in rest
+    script(type="text/javascript" src="/javascripts/" + file + ".js")
