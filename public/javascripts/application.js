@@ -35,17 +35,6 @@ var App = {
     this.listenTo(this.index, 'add_album', this.newAlbum);
     this.on('add_to_cart', this.cart.addItem.bind(this.cart));
   },
-
-  fetchAlbums: function() {
-    this.albums = new Albums();
-    this.albums.fetch({
-      success: this.indexView.bind(this),
-    });
-  },
-
-  init: function() {
-    this.fetchAlbums();
-  },
 };
 
 Handlebars.registerHelper('format_price', function(price) {
