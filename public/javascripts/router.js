@@ -4,7 +4,7 @@ var router = new (Backbone.Router.extend({
   },
 
   index: function() {
-    App.indexView();
+    App.init();
   },
 
   initialize: function() {
