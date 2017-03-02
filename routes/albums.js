@@ -26,9 +26,9 @@ module.exports = function(router) {
     res.json(currentAlbum);
   });
 
-  router.delete('/albums', function(req, res) {
+  router.delete('/albums/:id', function(req, res) {
     var albums = _(Albums.get()).reject(function(album) {
-      return album.id === +req.body.id;
+      return album.id === +req.params.id;
     });
 
     Albums.set(albums);
