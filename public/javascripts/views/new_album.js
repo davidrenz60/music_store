@@ -25,6 +25,7 @@ var NewAlbumView = Backbone.View.extend({
       success: function(json) {
         App.albums.add(json);
         App.indexView();
+        router.navigate('/');
       },
     });
   },

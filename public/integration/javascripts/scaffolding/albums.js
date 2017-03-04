@@ -1,4 +1,4 @@
-{
+var albums_scaffold = {
   "last_id": 9,
   "data": [{
     "id": 0,
@@ -76,4 +76,4 @@
     "price": 9.99,
     "date": "2014-10-27"
   }]
-}
+};

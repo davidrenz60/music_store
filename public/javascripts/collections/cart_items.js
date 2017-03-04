@@ -5,7 +5,7 @@ var CartItems = Backbone.Collection.extend({
     if (existingModel) {
       existingModel.set('quantity', existingModel.get('quantity') + 1);
     } else {
-      existingModel = model.clone()
+      existingModel = model.clone();
       existingModel.set('quantity', 1);
       this.add(existingModel);
     }
