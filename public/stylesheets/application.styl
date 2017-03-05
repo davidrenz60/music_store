@@ -51,6 +51,15 @@ form
         font-size: 1.5em
       h3
         font-size: 1.25em
+      div
+        margin: 8px 0 0 3px
+      a.delete
+        margin-right: 5px;
+        top: 1px;
+        delete_icon(15px)
+        + p
+          color: colors.delete
+          font-size: 13px
 
 header
   width: 800px
@@ -90,28 +99,10 @@ header
   a
     float: left
     position: relative
-    top: 2px
-    width: 12px
-    height: 12px
     margin: 0 5px 0 0
-    text-indent: 9999px
-    transform: rotate(45deg)
-    &:before, &:after
-      content: '';
-      position: absolute
-      background: colors.delete
-    &:before
-      top: 0
-      bottom: 0
-      left: 50%
-      width: 2px
-      margin-left: -1px
-    &:after
-      left: 0
-      right: 0
-      top: 50%
-      height: 2px
-      margin-top: -1px
+    top: 2px
+    deleteicon(12px)
+
 a.button, input[type="submit"]
   button()
 

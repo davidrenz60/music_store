@@ -57,6 +57,43 @@ form input[type="url"] {
 #index ul li h3 {
   font-size: 1.25em;
 }
+#index ul li div {
+  margin: 8px 0 0 3px;
+}
+#index ul li a.delete {
+  margin-right: 5px;
+  top: 1px;
+  float: left;
+  position: relative;
+  text-indent: 9999px;
+  transform: rotate(45deg);
+  width: 15px;
+  height: 15px;
+}
+#index ul li a.delete:before,
+#index ul li a.delete:after {
+  content: '';
+  position: absolute;
+  background: #b00b00;
+}
+#index ul li a.delete:before {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  margin-left: -1px;
+}
+#index ul li a.delete:after {
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 2px;
+  margin-top: -1px;
+}
+#index ul li a.delete + p {
+  color: #b00b00;
+  font-size: 13px;
+}
 header {
   width: 800px;
   padding: 0 40px;
@@ -101,32 +138,8 @@ header {
 #cart a {
   float: left;
   position: relative;
-  top: 2px;
-  width: 12px;
-  height: 12px;
   margin: 0 5px 0 0;
-  text-indent: 9999px;
-  transform: rotate(45deg);
-}
-#cart a:before,
-#cart a:after {
-  content: '';
-  position: absolute;
-  background: #b00b00;
-}
-#cart a:before {
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 2px;
-  margin-left: -1px;
-}
-#cart a:after {
-  left: 0;
-  right: 0;
-  top: 50%;
-  height: 2px;
-  margin-top: -1px;
+  top: 2px;
 }
 a.button,
 input[type="submit"] {

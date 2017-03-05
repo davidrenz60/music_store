@@ -48,7 +48,7 @@ describe('Album View', function() {
 
     afterEach(function() {
       App.index.remove();
-      App.cart.view.remove();
+      $('#cart').empty();
       localStorage.clear();
     });
 
