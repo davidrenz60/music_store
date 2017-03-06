@@ -3,7 +3,7 @@ var AlbumView = Backbone.View.extend({
   template: App.templates.album,
   events: {
     'click a.button': 'addToCart',
-    'click a.delete': 'deleteAlbum'
+    'click a.delete': 'deleteAlbum',
   },
 
   deleteAlbum: function(e) {

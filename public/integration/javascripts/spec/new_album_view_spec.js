@@ -21,5 +21,9 @@ describe('New Album View', function() {
     expect($('#album_new').length).toBe(1);
   });
 
-  // submit form and create new album
+  it('calls create when form is submitted', function() {
+    spyOn($, 'ajax');
+    $("input[type='submit']").trigger('submit');
+    expect($.ajax).toHaveBeenCalled();
+  });
 });

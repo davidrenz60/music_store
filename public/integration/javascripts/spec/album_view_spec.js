@@ -40,10 +40,13 @@ describe('Album View', function() {
   });
 
   describe('events', function() {
+    var model;
+
     beforeEach(function() {
       localStorage.clear();
       App.albums = albums;
       App.indexView();
+      model = App.albums.get(0);
     });
 
     afterEach(function() {
@@ -57,6 +60,12 @@ describe('Album View', function() {
       expect($('#cart li').length).toBe(1);
     });
 
-    // test deleteAlbum
+    it('deletes an album from the collection', function() {
+      spyOn(model, 'destroy');
+
+      App.$el.find('#index li a.delete').first().trigger('click');
+      expect(model.destroy).toHaveBeenCalled();
+      expect($("li[id='album_0']").length).toBe(0);
+    });
   });
 });

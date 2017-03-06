@@ -60,6 +60,17 @@ form input[type="url"] {
 #index ul li div {
   margin: 8px 0 0 3px;
 }
+#index ul li a {
+  display: block;
+  text-decoration: none;
+}
+#index ul li a.edit {
+  margin: 8px 0px 0 2px;
+  padding: 0 0 0 20px;
+  font-size: 13px;
+  color: #00a388;
+  background: url("../images/edit.png") 0 2px no-repeat;
+}
 #index ul li a.delete {
   margin-right: 5px;
   top: 1px;

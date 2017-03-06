@@ -53,14 +53,22 @@ form
         font-size: 1.25em
       div
         margin: 8px 0 0 3px
+      a
+        display: block
+        text-decoration: none
+      a.edit
+          margin: 8px 0px 0 2px;
+          padding: 0 0 0 20px;
+          font-size: 13px;
+          color: colors.button.bg
+          background: url(../images/edit.png) 0 2px no-repeat;
       a.delete
-        margin-right: 5px;
-        top: 1px;
-        delete_icon(15px)
-        + p
-          color: colors.delete
-          font-size: 13px
-
+          margin-right: 5px;
+          top: 1px;
+          delete_icon(15px)
+          + p
+            color: colors.delete
+            font-size: 13px
 header
   width: 800px
   padding: 0 40px
