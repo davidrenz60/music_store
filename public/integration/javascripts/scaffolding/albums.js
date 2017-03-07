@@ -5,7 +5,7 @@ var albums_scaffold = {
     "artist": "Tori Kelly",
     "title": "Unbreakable Smile",
     "url": "https://itunes.apple.com/us/album/unbreakable-smile-bonus-track/id988591612?v0=WWW-NAUS-ITSTOP100-ALBUMS&l=en&ign-mpt=uo%3D4",
-    "date": "Jun 23, 2015",
+    "date": "2015-06-23",
     "cover": "http://a5.mzstatic.com/us/r30/Music5/v4/83/10/90/83109037-0c67-bf88-a2c5-a022b21de7d7/cover170x170.jpeg",
     "price": 12.99
   },
@@ -14,7 +14,7 @@ var albums_scaffold = {
     "artist": "Taylor Swift",
     "title": "1989",
     "url": "https://itunes.apple.com/us/album/1989/id907242701?v0=WWW-NAUS-ITSTOP100-ALBUMS&l=en&ign-mpt=uo%3D4",
-    "date": "Oct 27, 2014",
+    "date": "2014-10-27",
     "cover": "http://a3.mzstatic.com/us/r30/Music5/v4/29/fa/b6/29fab67f-c950-826f-26a0-5eebcd0e262b/cover170x170.jpeg",
     "price": 12.99
   },
@@ -23,7 +23,7 @@ var albums_scaffold = {
     "artist": "Breaking Benjamin",
     "title": "Dark Before Dawn",
     "url": "https://itunes.apple.com/us/album/dark-before-dawn/id975950518?v0=WWW-NAUS-ITSTOP100-ALBUMS&l=en&ign-mpt=uo%3D4",
-    "date": "Jun 23, 2015",
+    "date": "2015-06-23",
     "cover": "http://a3.mzstatic.com/us/r30/Music1/v4/20/7d/35/207d354b-c1e7-c199-d363-9269d0be9376/cover170x170.jpeg",
     "price": 15.99
   },
@@ -32,7 +32,7 @@ var albums_scaffold = {
     "artist": "Adele",
     "title": "25",
     "url": "https://itunes.apple.com/us/album/dear-agony/id332288664",
-    "date": "Nov 20, 2015",
+    "date": "2015-11-20",
     "cover": "http://a2.mzstatic.com/us/r30/Music6/v4/8c/91/5d/8c915d9b-d9e4-f735-1b91-81ca1b6e6312/cover170x170.jpeg",
     "price": 9.99
   },
@@ -77,3 +77,5 @@ var albums_scaffold = {
     "date": "2014-10-27"
   }]
 };
+
+var album = new Album(albums_scaffold.data[0]);

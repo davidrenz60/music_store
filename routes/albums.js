@@ -17,7 +17,7 @@ module.exports = function(router) {
     res.json(album);
   });
 
-  router.put('/albums', function(req, res) {
+  router.put('/albums/:id', function(req, res) {
     var albums = Albums.get();
     var currentAlbum = _(albums).findWhere({ id: +req.body.id });
     _.extend(currentAlbum, req.body);
@@ -37,6 +37,12 @@ module.exports = function(router) {
 
   router.get('/albums/new', function(req, res) {
     res.render('new', {
+      albums: Albums.get(),
+    });
+  });
+
+  router.get('/albums/edit/:id', function(req, res) {
+    res.render('edit', {
       albums: Albums.get(),
     });
   });

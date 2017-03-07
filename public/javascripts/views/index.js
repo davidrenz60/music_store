@@ -4,14 +4,6 @@ var IndexView = Backbone.View.extend({
   },
 
   template: App.templates.index,
-  events: {
-    'click footer a': 'addAlbum',
-  },
-
-  addAlbum: function(e) {
-    e.preventDefault();
-    this.trigger('add_album');
-  },
 
   render: function() {
     this.$el.html(this.template());

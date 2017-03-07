@@ -1,10 +1,15 @@
 var router = new (Backbone.Router.extend({
   routes: {
     "albums/new": App.newAlbum,
+    "albums/edit/:id": 'editAlbum',
   },
 
   index: function() {
     App.indexView();
+  },
+
+  editAlbum: function(id) {
+    App.editAlbum(id);
   },
 
   initialize: function() {

@@ -30,9 +30,14 @@ var App = {
     new NewAlbumView();
   },
 
+  editAlbum: function(id) {
+    new EditAlbumView({
+      model: this.albums.get(id)
+    });
+  },
+
   bindEvents: function() {
     _.extend(this, Backbone.Events);
-    this.listenTo(this.index, 'add_album', this.newAlbum);
     this.on('add_to_cart', this.cart.addItem.bind(this.cart));
   },
 };
